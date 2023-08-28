@@ -1,5 +1,6 @@
 import React from "react";
-function Ipl(){
+import Ipl from "./Team"
+function Team(){
     var[team ,setTeam]=React.useState([
         {
         teamname:'Mumbai Indians',
@@ -45,17 +46,17 @@ function Ipl(){
 
 
     return(
-        <div className="box">
+        <div>
             {
                 team.map((play)=>{
                     
                     return(
                         
-                        <li className="box"> playersname= {play.players}  teamnames={play.teamname}</li>
+                        <Ipl players= {play.players}  teamname={play.teamname}></Ipl>
                     )
                 })
             }
         </div>
     )
 }
-  export  default Ipl;
+  export  default Team;

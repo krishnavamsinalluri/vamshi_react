@@ -1,23 +1,17 @@
 
 import './App.css';
-import Counter from './Counter';
-import Todolist from './Todolist';
-import Ipl from './Iplteam';
+import Team from './Iplteam';
+import Ipl from './Team'
 
-function App(props) {
+function App() {
 
 
   return (
-    <div className="box">
-      <h1>India vs Praskisan</h1>
-      
-      <Counter s={0} i={6}></Counter>
-      <br/>
-      <Counter s={0} i={4}></Counter>
+    <div className='box'>
+      <h1>IPL TEAMS</h1>
       <br />
-      <Todolist></Todolist>
-
-      <Ipl></Ipl>
+      <br />
+      <Team></Team>
     </div>
   );
 }
