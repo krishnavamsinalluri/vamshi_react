@@ -2,8 +2,9 @@
 import './App.css';
 import Counter from './Counter';
 import Todolist from './Todolist';
+import Ipl from './Iplteam';
 
-function App() {
+function App(props) {
 
 
   return (
@@ -15,6 +16,8 @@ function App() {
       <Counter s={0} i={4}></Counter>
       <br />
       <Todolist></Todolist>
+
+      <Ipl></Ipl>
     </div>
   );
 }
