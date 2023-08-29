@@ -35,11 +35,10 @@ function Toli(){
         
         
           return (
-        <div>
-          <>
+      
+          <div>
           <input type="text" id="in" />
-          <button onClick={abc}>addtask</button>
-          </>
+          <button onClick={abc}>add</button>
         
           
           {
