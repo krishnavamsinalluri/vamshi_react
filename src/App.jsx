@@ -1,17 +1,16 @@
 
 import './App.css';
-import Team from './Iplteam';
-import Ipl from './Team'
+import Toli from './Todolist'
 
 function App() {
 
 
   return (
     <div className='box'>
-      <h1>IPL TEAMS</h1>
+      <h1>To dolist</h1>
       <br />
       <br />
-      <Team></Team>
+      <Toli></Toli>
     </div>
   );
 }
