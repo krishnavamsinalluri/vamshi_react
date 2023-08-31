@@ -1,16 +1,17 @@
 
 import './App.css';
-import Toli from './Todolist'
+import Planner from './Restcountries';
+
 
 function App() {
 
 
   return (
-    <div className='box'>
-      <h1>To dolist</h1>
-      <br />
-      <br />
-      <Toli></Toli>
+    <div>
+      
+      <Planner></Planner>
+  
+  
     </div>
   );
 }
