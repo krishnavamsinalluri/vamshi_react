@@ -62,8 +62,8 @@ function Country(){
             {
                 
                 Countries.length>0 && Countries.map((a)=>{
-                    return <li>{a.name.common}
-                                                       </li>
+                    return <li>{a.name.common}</li>
+                                                       
                 
                 })
                 
