@@ -2,7 +2,7 @@
 import './App.css';
 import Counter from './Counter';
 import Todolist from './Todolist';
-import Ipl from './Iplteam';
+
 
 function App(props) {
 
@@ -17,7 +17,7 @@ function App(props) {
       <br />
       <Todolist></Todolist>
 
-      <Ipl></Ipl>
+    
     </div>
   );
 }
