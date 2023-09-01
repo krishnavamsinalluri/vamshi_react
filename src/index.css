@@ -1,20 +1,6 @@
+@import url("../node_modules/bootstrap/dist/css/bootstrap.min.css");
 .box{
-  border:1px solid;
-  padding: 10px;
-  margin: 10px;
-  border-radius: 5px;
-  
-
-}
-.inbox{
   border: 1px solid;
-  border-radius: 10px;
-  
-}
-.content{
-  text-align: center;
-  border: 2px solid red;
-  background-color: red;
-
-
+  margin: 5px;
+  padding: 10px;
 }

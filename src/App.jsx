@@ -1,6 +1,6 @@
 
 import './App.css';
-import Reviews from './Data';
+import Products from './Products';
 
 
 
@@ -9,9 +9,9 @@ function App() {
 
   return (
     <div>
-      <h1>Edupolly Reviews</h1>
+      <h1>products</h1>
       
-    <Reviews></Reviews>
+      <Products></Products>
   
   
     </div>
