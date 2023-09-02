@@ -23,19 +23,17 @@ function Products(){
                 {
                     products.length>0&&products.map(function(a){
                         return(
-                            <div className="box w-25" >
-                        <div className="card " style={{width:"18rem"}}>
+                            <div className="box " >
+                        <div className="card p-3 mb-2 bg-primary-subtle text-emphasis-primary" style={{width:"18rem"}}>
                         <img  src={a.image}  style={{width:"100px"}}className="card-img-top" alt="" />
                         <div className="card-body">
                           <h5 >{a.category}</h5>
                           <p>{a.price}</p>
                           </div>
                            </div>
-                           <div className="card">
-                           <button onClick={()=>{add()}}>add to card</button>
-
+                           <div className="card text-bg-secondary p-3">
+                           <button className="btn" onClick={()=>{add()}}>add to card</button>
                              </div>
-
                       </div>
                         
                         
@@ -52,9 +50,10 @@ function Products(){
                                 <b>{b.category}</b>
                             )
                         })
+                    
                     }
                     </div> 
-                    
+
 
                 </div>
             </div>
