@@ -1,16 +1,27 @@
 
 import './App.css';
-import Planner from './Restcountries';
+import React from 'react';
+import Answer from './Question';
+import Questions from './Data';
 
 
 function App() {
-
+  var [data,setData]=React.useState(Questions)
 
   return (
     <div>
       
-      <Planner></Planner>
-  
+    {
+      data.map((a)=>{
+        return(
+
+          <Questions key={Questions.id} {...Questions}></Questions>
+
+
+        )
+      })
+    }
+  <Answer></Answer>
   
     </div>
   );
