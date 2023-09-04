@@ -1,15 +1,15 @@
-
+import React from 'react';
 import './App.css';
-import Food from './Food';
 
 
 function App() {
-
+    var[like,setLike]=React.useState(0)
+    var[dislike,setDislike]=React.useState(0)
 
   return (
-    <div className="box">
-      <h1>sea food</h1>
-      <Food></Food>
+    <div>
+      <button onClick={()=>{setLike(like+1)}}>like</button>{like}
+      <button onClick={()=>{setDislike(dislike+1)}}>Dislike</button>{dislike}
     
 
     
