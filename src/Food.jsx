@@ -3,7 +3,7 @@ import axios from"axios";
 
 function Food(){
     var[items,setItems]=React.useState([])
-  useEffect(function(){
+  React.useEffect(function(){
         axios.get("https://www.themealdb.com/api/json/v1/1/filter.php?c=Seafood").then(function(res){
         console.log(res.data.meal)
         setItems([...res.data.meal])
@@ -18,7 +18,7 @@ function Food(){
             {
                 items.map((s)=>{
                     return(
-                        <li>{s.meal}</li>
+                        <li></li>
                     )
                 })
             }
