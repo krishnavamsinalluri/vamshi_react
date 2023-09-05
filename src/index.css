@@ -1,6 +1,10 @@
+@import url('../node_modules/bootstrap/dist/css/bootstrap-grid.min.css');
 .box{
   border: 1px solid;
   margin: 10px;
   padding: 10px;
   list-style: none;
+}
+.display{
+  display: flex;
 }
