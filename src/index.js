@@ -8,6 +8,8 @@ import {
   RouterProvider,
 } from "react-router-dom";
 import Aboutus from './Aboutus';
+import Countact from './Contactus';
+import Sweet from './Sweetitems';
 
 const router = createBrowserRouter([
   {
@@ -17,6 +19,14 @@ const router = createBrowserRouter([
       {
         path:"/aboutus",
         element:<Aboutus></Aboutus>
+      },
+      {
+        path:"/contactus",
+        element:<Countact></Countact>
+      },
+      {
+        path:'/sweetitems',
+        element:<Sweet></Sweet>
       }
     ]
     
