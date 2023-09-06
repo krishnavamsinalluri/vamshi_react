@@ -1,8 +1,9 @@
 import React, { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import axios from "axios"
+import bootstrap from "bootstrap/dist/css/bootstrap.min.css"
 function Counytrydetails(){
-    var {cname}=useParams
+    var {cname}=useParams()
     var[countrysdetails,setCountrysdetails]=React.useState(null)
     useEffect(()=>{
         axios.get("https://restcountries.com/v3.1/name/"+cname).then((res)=>{
@@ -10,13 +11,21 @@ function Counytrydetails(){
         })
     },[cname])
     return(
-        <div className="box">
+        <div>
             {
                 countrysdetails && ( 
-                    <div>  
-                  <h1>{countrysdetails.name.common}</h1>
+                    <div className="card">    
+                    <img src={countrysdetails.flags.png} alt="" />
+
+                    <div className="card-body bg-primary">
+                 <h1 >{countrysdetails.name.common}</h1>
+                 <p>{countrysdetails.capital}</p>
+                 <p></p>
+                  </div>
+                  </div>
+
             
-                    </div>
+                
   
                 )
             }

@@ -1,7 +1,7 @@
 import React, { useEffect } from "react";
 import axios from "axios"
 import { Link,Outlet } from "react-router-dom";
-import bootstarp from 'bootstrap/dist/css/bootstrap-grid.min.css'
+import bootstrap from 'bootstrap/dist/css/bootstrap.min.css'
 function Api(){
     var[Countrys,setCountrys]=React.useState([])
     useEffect(()=>{
