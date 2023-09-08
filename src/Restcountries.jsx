@@ -2,12 +2,14 @@ import React from "react";
 import axios from "axios"
 function Country(){
      var[Countries,setCountries]=React.useState([]) 
+
     React.useEffect(
         function(){
         axios.get("https://restcountries.com/v3/all").then(function(res){
             console.log(res.data)
             setCountries([...res.data])
          })},[])
+         
          function ass(){
             Countries.sort(function(a,b){
                 var card1=a.name.common
