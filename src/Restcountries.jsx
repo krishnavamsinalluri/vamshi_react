@@ -1,5 +1,6 @@
 import React from "react";
 import axios from "axios";
+import bootstrap from "bootstrap/dist/css/bootstrap.min.css"
 function Planner(){
     var[toures,setToures]=React.useState([])
 
@@ -22,15 +23,20 @@ function Planner(){
                 toures.map((a,i)=>{
                     return(
                 
-                       <div className="box">
-                        <img src={a.image} style={{width:"400px"}} className="inbox"/>
-                         <h2>{a.name} </h2>
+                       <div className="card m-3" style={{width: "25rem"}}>
+                        <img src={a.image} style={{width:"25rem"}} className="card-img-top"/>
+                        <div className="card-body">          
+                         <h2>{a.name}
+                         <span className="badge bg-secondary"> ${a.price}</span><br />
+
+                          </h2>
                         <p>{a.info}</p>
-                        <span> ${a.price}</span><br />
-                        <button className="content" onClick={()=>{abc(i)}}>Not interstent</button>
+                        <button className="btn btn-outline-danger" align="center"     onClick={()=>{abc(i)}}>Not interstent</button>
                     
                                                 
                         </div>
+                        </div>
+
                         
 
 
