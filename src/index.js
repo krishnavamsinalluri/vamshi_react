@@ -10,6 +10,7 @@ import {
 import Aboutus from './Aboutus';
 import Countact from './Contactus';
 import Sweet from './Sweetitems';
+import Hot from './Hotitems';
 
 const router = createBrowserRouter([
   {
@@ -27,6 +28,10 @@ const router = createBrowserRouter([
       {
         path:'/sweetitems',
         element:<Sweet></Sweet>
+      },{
+        path:"/hotitems",
+        element:<Hot></Hot>
+
       }
     ]
     

@@ -5,7 +5,7 @@ import bootstrap from "bootstrap/dist/css/bootstrap.min.css"
 function Countact(){
     return(
         <div className="card">  
-        <img src="https://www.ammammapodi.com/assets/frontend/images/ammaicon.png" alt="" />  
+        <img style={{width:"18rem"}} src="https://www.ammammapodi.com/assets/frontend/images/ammaicon.png" alt="" />  
             
              <div className="card-body">
              <i className="bi bi-telephone-inbound-fill">9573642409</i><br />

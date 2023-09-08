@@ -15,17 +15,42 @@ function Sweet(){
                 Type:"milke",
                 Qulity:"1kg",
                 price:500
+            },            {
+                Image:"https://i.pinimg.com/originals/4f/55/8c/4f558caa1a3a27e19a11bfaef2d8b812.jpg",
+                Type:"milke",
+                Qulity:"1kg",
+                price:500
+            },            {
+                Image:"https://i.pinimg.com/originals/4f/55/8c/4f558caa1a3a27e19a11bfaef2d8b812.jpg",
+                Type:"milke",
+                Qulity:"1kg",
+                price:500
+            },            {
+                Image:"https://i.pinimg.com/originals/4f/55/8c/4f558caa1a3a27e19a11bfaef2d8b812.jpg",
+                Type:"milke",
+                Qulity:"1kg",
+                price:500
+            },            {
+                Image:"https://i.pinimg.com/originals/4f/55/8c/4f558caa1a3a27e19a11bfaef2d8b812.jpg",
+                Type:"milke",
+                Qulity:"1kg",
+                price:500
+            },            {
+                Image:"https://i.pinimg.com/originals/4f/55/8c/4f558caa1a3a27e19a11bfaef2d8b812.jpg",
+                Type:"milke",
+                Qulity:"1kg",
+                price:500
             }
         ]
     )
     return(
-        <div>
+        <div className="d-flex flex-wrap">
         {
             items.map((a)=>{
                 return(
-                    <div className="card m-3"> 
-                 <img  style={{width:"18rem"}}src={a.Image}></img>
-                    <div className="card-body">
+                    <div className="card m-3 p-2 w-25"> 
+                 <img src={a.Image}></img>
+                    <div className="card-body bg-secondary">
                     <h1>{a.Type} </h1>
                     <b> Qulity:{a.Qulity}</b> <br />
                     <b>price:{a.price}</b>

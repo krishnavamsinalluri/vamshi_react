@@ -1,9 +1,13 @@
 import React from "react";
 function Aboutus(){
     return(
-        <div>
+        <div >
             <h1>About us</h1>
-            <h1>Ammaamma gari food</h1>
+            <div className="pic">         
+                 <h1 style={{color:"red"}}>Ammaamma gari food</h1>
+            <img src="https://2.imimg.com/data2/IH/YY/MY-1383501/diwali-faral-500x500.jpg" alt="" />
+            </div>
+  
             <p> ART thou poor, yet hast thou golden slumbers?
                         O sweet content!
 Art thou rich, yet is thy mind perplex'd?
