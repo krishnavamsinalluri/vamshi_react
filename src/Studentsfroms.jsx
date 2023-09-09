@@ -18,8 +18,10 @@ function Forms(){
                 })
     
                 return(
+                        <div className="box">
+                          <h1>Students from</h1>
                         <form onSubmit={fobj.handleSubmit}>
-                          Firstname:  <input type="text"  name="fristname"  onChange={fobj.handleChange} onBlur={fobj.handleBlur}></input>
+                          Firstname:  <input type="text"  name="fristname"  onChange={fobj.handleChange} onBlur={fobj.handleBlur}/>
                          <b>{fobj.touched.fristname && fobj.errors && fobj.errors.fristname} </b><br />
                           Lastname:  <input type="text" name="lastname"  onChange={fobj.handleChange} onBlur={fobj.handleBlur} />
                             <b>{fobj.touched.lastname && fobj.errors && fobj.errors.lastname}</b><br />
@@ -27,6 +29,7 @@ function Forms(){
                             <b>{fobj.touched.age&& fobj.errors && fobj.errors.age}</b><br />
                             <button>add</button>
                         </form>
+                        </div>
                 )
             
         }
