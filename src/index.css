@@ -8,11 +8,11 @@
 }
 .pic{
   text-align: center;
+
+
 }
-.pic img{
-  width: 100%;
-  height: 200px;;
-}
+
+
 .display{
   display: flex;
   flex-wrap:wrap;

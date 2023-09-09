@@ -19,10 +19,10 @@ function App() {
       </div>
       <div className="card">
         <Outlet>
+        <iframe width="688" height="387" src="https://www.youtube.com/embed/odCMxmQv6WA" title="Eggless Flour Sweets Snacks | Fried Flour Sweet Snacks | Easy Sweet Snacks | N&#39;Oven" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
         </Outlet>
         
-            <iframe width="688" height="387" src="https://www.youtube.com/embed/odCMxmQv6WA" title="Eggless Flour Sweets Snacks | Fried Flour Sweet Snacks | Easy Sweet Snacks | N&#39;Oven" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
           </div>
       </div>
