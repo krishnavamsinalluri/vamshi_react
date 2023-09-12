@@ -7,8 +7,8 @@ function Todolist(props){
             <input type="text"  onChange={(e)=>{setNt(e.target.value)}}/> 
             <button onClick={()=>{props.dispatch({type:"addtodos",payload:nt})}}>addtodos</button>
             <h1>Todolist</h1>  
-          {props.t.todos.map((a)=>{
-          return <li>{a}</li>
+          {props.t.todos.map((a,i)=>{
+          return <li>{a} <button onClick={()=>{props.dispatch({type:"deletetodo",payload:i})}}>delet</button></li>
     })}
     </div>
   
