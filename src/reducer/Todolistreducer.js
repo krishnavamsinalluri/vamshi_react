@@ -3,11 +3,11 @@ const intialState={
 }
 function Todosreducer(State=intialState,action){
     if(action.type==="addtodos"){
-        return{...State,Todos:[...State.todos,action.playload]}
+        return{...State,todos:[...State.todos,action.payload]}
     }
     if(action.type==="deletetodo"){
         var tem=[...State.todos];
-        tem.splice(action.playload,1)
+        tem.splice(action.payload,1)
         return{...State.todos,todos:[...tem]}
     }
     return State
