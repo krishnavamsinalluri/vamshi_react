@@ -9,7 +9,7 @@ function Todolist(props){
             <button onClick={()=>{props.addtodoitems(nt)}}>addtodos</button>
             
           {props.todos.map((a,i)=>{
-          return <li>{a} <button onClick={()=>{props.dispatch({type:"deletetodo",payload:i})}}>delet</button></li>
+          return <li>{a} <button onClick={()=>{props.deletetodos(i)}}>delet</button></li>
     })}
     </div>
   
@@ -20,7 +20,8 @@ function Todolist(props){
     }
     function mapDispatchToProps(dispatch){
         return{
-            addtodoitems:(nt)=>{dispatch({type:"addtodos",payload:nt})}
+            addtodoitems:(nt)=>{dispatch({type:"addtodos",payload:nt})},
+            deletetodos:(i)=>{dispatch({type:"deletetodo",payload:i})}
         }
     }
 export default connect(mapStateToProps,mapDispatchToProps)(Todolist)
