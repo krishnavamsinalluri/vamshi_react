@@ -7,7 +7,7 @@ function Todolist(){
     var dispatch=useDispatch()
     
     return(
-        <div>
+        <div className="box">
             <h1>todolist</h1>
             <input type="text"  onChange={(e)=>{setNt(e.target.value)}}/>
             <button onClick={()=>{dispatch(addtodo(nt))}}>addtodo</button>

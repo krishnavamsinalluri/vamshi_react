@@ -4,7 +4,6 @@ function Counter(){
     var {Counter} =useSelector(
         (state)=>{ return state.c}
     )
-
     var dispatch=useDispatch()
 
     return(
