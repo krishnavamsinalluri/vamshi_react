@@ -10,9 +10,9 @@ function Counter(){
     return(
         <div className="box">
             <h1>Counter:{Counter}</h1>
-            <button onClick={dispatch(increment())}>inceriment</button>
-            <button onClick={dispatch(decrement())}>decrement</button>
-            <button onClick={dispatch(reset())}>Reset</button>
+            <button onClick={ ()=>dispatch(increment())}>increment</button>
+            <button onClick={ ()=>dispatch(decrement())}>decrement</button>
+            <button onClick={ ()=>dispatch(reset())}>Reset</button>
         </div>
     )
 }
