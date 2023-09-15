@@ -1,0 +1,147 @@
+{
+  "posts": [
+    {
+      "id": 1,
+      "title": "json-server",
+      "author": "typicode"
+    }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "body": "some comment",
+      "postId": 1
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  },
+  "students": [
+    {
+      "id": 1,
+      "name": "vamsi",
+      "age": "22",
+      "subjects": "engshli",
+      "marks": "100"
+    },
+    {
+      "id": 2,
+      "name": "ganesh",
+      "age": "22",
+      "subjects": "engshli",
+      "marks": "100"
+    },
+    {
+      "id": 4,
+      "name": "ganesh",
+      "age": "22",
+      "subjects": "engshli",
+      "marks": "100"
+    },
+    {
+      "name": "vamsi",
+      "age": "10",
+      "id": 7
+    },
+    {
+      "name": "vamsi",
+      "age": "10",
+      "id": 8
+    },
+    {
+      "name": "vamsi",
+      "age": "10",
+      "id": 11
+    },
+    {
+      "name": "vamsi",
+      "age": "10",
+      "id": 12
+    },
+    {
+      "name": "vamsi",
+      "age": "10",
+      "id": 13
+    },
+    {
+      "name": "vamsi",
+      "age": "10",
+      "id": 14
+    },
+    {
+      "name": "vamsi",
+      "age": "10",
+      "id": 15
+    },
+    {
+      "name": "bhannu",
+      "age": "12",
+      "id": 16
+    },
+    {
+      "name": "bhannu",
+      "age": "12",
+      "id": 17
+    },
+    {
+      "name": "bhannu",
+      "age": "12",
+      "id": 19
+    },
+    {
+      "name": "bhannu",
+      "age": "12",
+      "id": 20
+    },
+    {
+      "name": "bhannu",
+      "age": "12",
+      "id": 21
+    },
+    {
+      "name": "",
+      "age": "",
+      "id": 22
+    },
+    {
+      "name": "",
+      "age": "",
+      "id": 23
+    },
+    {
+      "name": "",
+      "age": "",
+      "id": 28
+    },
+    {
+      "name": "",
+      "age": "",
+      "id": 29
+    },
+    {
+      "name": "",
+      "age": "",
+      "id": 30
+    },
+    {
+      "name": "",
+      "age": "",
+      "id": 31
+    },
+    {
+      "name": "",
+      "age": "",
+      "id": 32
+    },
+    {
+      "name": "gh",
+      "age": "bn",
+      "id": 33
+    },
+    {
+      "name": "ghj",
+      "age": "vbn",
+      "id": 34
+    }
+  ]
+}
