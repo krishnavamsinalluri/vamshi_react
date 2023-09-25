@@ -23,7 +23,7 @@ function Marks(){
                   function add(){
                     axios.post("http://localhost:4000/students",newstudent).then((response)=>{
                       console.log(response)
-                      
+                      setNewstudent([...newstudent])
                     }).catch(()=>{})
                   }          
                   function del(id){
