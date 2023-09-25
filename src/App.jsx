@@ -1,10 +1,8 @@
 
 import './App.css';
-import Counter from './Counter';
-import Todolist from './Todolist';
 
 
-function App(props) {
+function App() {
 
 
   return (
