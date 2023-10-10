@@ -18,7 +18,9 @@ function Planner(){
     }
 
     return(
+            
         <div >
+            <div className="card">
             {
                 toures.map((a,i)=>{
                     return(
@@ -43,7 +45,9 @@ function Planner(){
                     )
                 })
             }
-        </div>
+ 
+            </div>
+       </div>
     )
 
     
