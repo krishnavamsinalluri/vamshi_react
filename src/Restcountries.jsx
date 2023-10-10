@@ -46,10 +46,10 @@ function Country(){
          function se(){
             var inp=document.getElementById("in").value
              var u=Countries.filter((c)=>{
-                return (c.name.common.startsWith(inp))
+                return (c.name.common.toUpperCase().startsWith(inp))
             })
             console.log(u)
-            setCountries([...Countries])
+            setCountries([...u])
          }
  
          
