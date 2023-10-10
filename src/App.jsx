@@ -5,15 +5,16 @@ import {Link, Outlet } from "react-router-dom";
 
 function App() {
   return (
-    <div className="box">
-      <Link to="/aboutus" >
-        Aboutus
-      </Link>
+    <div>
+     <button> <Link to="/aboutus" >
+        Home
+      </Link></button>
       &nbsp;&nbsp;&nbsp;&nbsp;
-
-      <Link to="/canner">Couses</Link>
+      <button>      <Link to="/canner">States</Link>
+        </button>
       &nbsp;&nbsp;&nbsp;&nbsp;
-      <Link to="/Country">Countrys</Link>
+      <button>      <Link to="/Country">Countrys</Link>
+        </button>
       <Outlet></Outlet>
 
     </div>

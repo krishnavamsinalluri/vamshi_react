@@ -2,8 +2,9 @@ import React from "react";
 function Aboutus(){
     return(
         <div>
-            <h1>Edupolly</h1>
-            <h1>best canner</h1>
+            
+            <img src="https://cdn.britannica.com/13/129613-131-30279F20/Flags-world-flags-Country-history-blog-travel-2009.jpg" alt="" />
+            
         </div>
     )
 
