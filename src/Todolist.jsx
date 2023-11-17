@@ -1,31 +1,28 @@
-import React from 'react'
+import React from "react";
 function Todo(){
-    var[players,setPlayers]=React.useState([])
-    function ab(){
-      
+    var [todos,setTodos]=React.useState([])
+    function abc(){
         var x=document.getElementById("dd").value
-        setPlayers([...players,x])
+        setTodos([...todos,x])
     }
-        function abc(i){
-            var tem=players
-            tem.splice(i,1)
-            setPlayers([...players])
+    function ab(i){
+        var tem=todos
+        tem.splice(i,1)
+        setTodos([...todos])
+    }
 
-        }
-
-
-
-    return (
-        <div className='box'>
-            <input type="text" id='dd' />
-            <button onClick={ab}>add todo</button>
+    return(
+        <div>
+            <input type="text" id="dd" />
+            <button onClick={abc}>add</button>
             {
-            players.map((a,i)=>{
-                return <li>{a}
-                <button onClick={abc}>detele</button></li>
-            })
+                todos.map((a,i)=>{
+                    return <li>{a}
+                    <button onClick={ab}>del</button></li>
+                })
             }
         </div>
     )
+
 }
-export default Todo
+ export default Todo
