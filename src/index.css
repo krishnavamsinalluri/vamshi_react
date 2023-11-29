@@ -3,3 +3,10 @@
   padding: 10px;
   margin: 20px;
 }
+.main{
+  border: 1px solid;
+  flex-wrap: wrap;
+  padding:"10px";
+  margin:"20px";
+  
+}
