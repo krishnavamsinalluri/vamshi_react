@@ -9,7 +9,6 @@ function App() {
     <div className='box'>
       <h1>To dolist</h1>
       <br />
-      <br />
       <Toli></Toli>
     </div>
   );
