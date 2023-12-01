@@ -21,9 +21,9 @@ function Products(){
                 
                 <div  className="d-flex flex-wrap w-75">
                 {
-                    products.length>0&&products.map(function(a){
+                    products.length>0&&products.map(function(a,i){
                         return(
-                            <div className="box " >
+                            <div className="box" >
                         <div className="card p-3 mb-2 bg-primary-subtle text-emphasis-primary" style={{width:"18rem"}}>
                         <img  src={a.image}  style={{width:"100px"}}className="card-img-top" alt="" />
                         <div className="card-body">
@@ -32,7 +32,8 @@ function Products(){
                           </div>
                            </div>
                            <div className="card text-bg-secondary p-3">
-                           <button className="btn" onClick={()=>{add()}}>add to card</button>
+                           <button className="btn" onClick={(i)=>{add(i)}}>add to card</button>
+
                              </div>
                       </div>
                         
@@ -47,7 +48,10 @@ function Products(){
                           {
                         cards.map((b)=>{
                             return(
+                                <div>
                                 <b>{b.category}</b>
+                                </div>
+
                             )
                         })
                     
