@@ -12,9 +12,8 @@
   border-radius: 10px;
 }
 .content{
-  text-align: center;
+  align-items: center;
   border: 2px solid red;
-  background-color: red;
 
 
 }

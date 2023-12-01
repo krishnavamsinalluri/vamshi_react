@@ -19,12 +19,13 @@ function Planner(){
 
     return(
             
-        <div >
-            <div className="card">
-            {
+        <div>
+               <div className="card">
+               <div className="content">
+ 
+                {
                 toures.map((a,i)=>{
                     return(
-                
                        <div className="card m-3" style={{width: "25rem"}}>
                         <img src={a.image} style={{width:"25rem"}} className="card-img-top"/>
                         <div className="card-body">          
@@ -33,21 +34,16 @@ function Planner(){
 
                           </h2>
                         <p>{a.info}</p>
-                        <button className="btn btn-outline-danger" align="center"     onClick={()=>{abc(i)}}>Not interstent</button>
-                    
-                                                
+                        <button className="btn btn-outline-danger" align="center"    onClick={()=>{abc(i)}}>Not interstent</button>                           
                         </div>
                         </div>
-
-                        
-
-
                     )
                 })
-            }
+             }
+            </div>
  
             </div>
-       </div>
+      </div>
     )
 
     
