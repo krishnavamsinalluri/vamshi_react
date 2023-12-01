@@ -10,7 +10,6 @@ function App() {
         <div className="box">
           <Counter></Counter>
           <Todolist></Todolist>
-
    </div>
    </Provider>
  
