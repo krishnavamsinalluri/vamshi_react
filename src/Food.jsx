@@ -11,9 +11,6 @@ function Food(){
     })
     },[])
     
-
-
-
     return(
         <div>
             {
