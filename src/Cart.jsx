@@ -2,7 +2,15 @@ import React from 'react';
 
 
 const Cart = (props)=>{
+    var temp = props;
 
+    // function dele(b){
+    //      var tem=temp.splice(b,1)
+    //         setCards([...tem])
+    //         console.log(b)
+    //      }
+
+console.log( "id",temp.id)
     return(
         <div className='border'>
             <h1>ADD TO CART</h1>
@@ -14,7 +22,7 @@ const Cart = (props)=>{
                             <img  src={b.image}  style={{width:"100px"}}className="card-img-top" alt="" />
                              <h5 >{b.category}</h5>
                                 <b> $ {b.price}</b>
-                                <button onClick={()=>props.removeItem(b)}>Remove from cart</button>
+                                <button onClick={(b)=>dele(b.id)}>Remove from cart</button>
 
                                 </div>
 

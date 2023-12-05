@@ -7,7 +7,7 @@ function Products(){
     var [cards,setCards]=React.useState([])
     useEffect(function(){
     axios.get("https://fakestoreapi.com/products").then(function(res){
-            console.log(res.data)
+           // console.log(res.data)
             setProducts([...res.data])
         
     })
@@ -17,7 +17,7 @@ function Products(){
 )
     function add(a){
         setCards([...cards,a])
-        console.log(a)
+       // console.log(a)
     }
     // function dele(b){
     //     var tem=cards.splice(b,1)
@@ -37,6 +37,7 @@ function Products(){
                         <div className="card-body">
                           <h5 >{a.category}</h5>
                           <p> ${a.price}</p>
+                        
                           </div>
                            </div>
                            <div className="card text-bg-secondary">
