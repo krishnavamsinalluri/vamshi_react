@@ -18,15 +18,13 @@ function Planner(){
     }
 
     return(
-            
-        <div>
+        <div className="d-flex justify-content-center">
                <div className="card">
-               <div className="content">
- 
+                <h1 className="text-center" style={{color:"red"}}>Tourist places</h1>
                 {
                 toures.map((a,i)=>{
                     return(
-                       <div className="card m-3" style={{width: "25rem"}}>
+                       <div className="card m-5 p-8" style={{width: "25rem"}}>
                         <img src={a.image} style={{width:"25rem"}} className="card-img-top"/>
                         <div className="card-body">          
                          <h2>{a.name}
@@ -39,11 +37,10 @@ function Planner(){
                         </div>
                     )
                 })
-             }
-            </div>
- 
-            </div>
+              }
+            </div>    
       </div>
+
     )
 
     
