@@ -29,7 +29,6 @@ return (
      password:   <input type="text"  onSubmit={from.handleSubmit}/>
         <b>{from.touched.password && from.errors && from.errors.password}</b>
 
-
     </form>
     </div>
 )
