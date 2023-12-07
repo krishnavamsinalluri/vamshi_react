@@ -23,13 +23,13 @@ function Canner() {
                 <div id="carouselExample" class="carousel slide">
                     <div class="carousel-inner">
                         <div class="carousel-item active">
-                            <img  class="w-100px; h-100px"src="https://www.whereig.com/india/states/map/andhra-pradesh-district-map.jpg" class=" w-100" alt="1st" />
+                            <img  src="https://www.whereig.com/india/states/map/andhra-pradesh-district-map.jpg" class="d-block w-100" alt="1st" />
                         </div>
                         <div class="carousel-item">
-                            <img src="https://www.toptourguide.com/indialarge.gif" class=" w-100" alt="2nd" />
+                            <img src="https://www.toptourguide.com/indialarge.gif" class="d-block w-100" alt="2nd" />
                         </div>
                         <div class="carousel-item">
-                            <img src="https://telangana.gov.in/PublishingImages/Pages/Home/Telangana%20Map-HomePage-33districts.png" class=" w-100" alt="3rd" />
+                            <img src="https://telangana.gov.in/PublishingImages/Pages/Home/Telangana%20Map-HomePage-33districts.png" class="d-block w-100" alt="3rd" />
                         </div>
                     </div>
                     <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
