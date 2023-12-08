@@ -4,12 +4,12 @@ import React, { useState } from 'react';
 const Cart = (props)=>{
     // console.log(props.price);
     var [cart, setCart] = useState(props.price)
-    var temp = cart.id;
 
-    function dele(b){
-         var tem=cart.splice(b,1)
+    function dele(i){
+        //console.log(i)
+         var tem=cart.splice(i,1)
             setCart([...tem])
-            console.log(b)
+            console.log(tem)
          }
 
     
@@ -24,7 +24,7 @@ const Cart = (props)=>{
                             <img  src={b.image}  style={{width:"100px"}}className="card-img-top" alt="" />
                              <h5 >{b.category}</h5>
                                 <b> $ {b.price}</b>
-                                <button onClick={(b)=>dele(b.id)}>Remove from cart</button>
+                                <button onClick={()=>dele(i)}>Remove from cart</button>
 
                                 </div>
 
