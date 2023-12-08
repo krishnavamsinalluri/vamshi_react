@@ -10,7 +10,6 @@ function App() {
       <Forms></Forms>
      <Form></Form>
      <Data></Data>
-
  </div>
   );
 }
