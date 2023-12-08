@@ -1,16 +1,18 @@
-import React from 'react';
+import React, { useState } from 'react';
 
 
 const Cart = (props)=>{
-    var temp = props;
+    // console.log(props.price);
+    var [cart, setCart] = useState(props.price)
+    var temp = cart.id;
 
-    // function dele(b){
-    //      var tem=temp.splice(b,1)
-    //         setCards([...tem])
-    //         console.log(b)
-    //      }
+    function dele(b){
+         var tem=cart.splice(b,1)
+            setCart([...tem])
+            console.log(b)
+         }
 
-console.log( "id",temp.id)
+    
     return(
         <div className='border'>
             <h1>ADD TO CART</h1>
