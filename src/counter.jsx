@@ -1,12 +1,19 @@
 import React from "react"
 
-function Counter(props){
+import {  connect } from "react-redux";
+function Count(props){
     console.log(props)
     return(
-        <div>
-            <h1> count{props.c.count}</h1>
+        <div className="box">  
             
-        </div>
+            
+      <h1> counter:{props.c.count}</h1>
+    <button onClick={()=>{props.dispatch({type:"INC"})}}>Incerment</button>
+    <button onClick={()=>{props.dispatch({type:"DEC"})}}>Decrment</button>
+    <button onClick={()=>{props.dispatch({type:"RESET"})}}>Reset</button>
+
+    </div>
+
     )
 }
-export default 
+export default connect(function(store){return store})(Count)
