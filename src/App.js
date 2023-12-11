@@ -1,4 +1,5 @@
-import store from "./Store";
+import React from "react"
+import store from "./store/store";
 import { Provider } from "react-redux";
 import Counter from "./counter";
 function App(){
