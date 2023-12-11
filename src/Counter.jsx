@@ -11,18 +11,14 @@ function Counters(props){
             <button onClick={()=>{props.rese()}}>Reset</button>
         </div>
     )
-}
-    function mapStateToProps(state){return  state.c}
 
+    function mapStateToProps(state){return  state.c}
     function mapDispatchToProps(dispatch)
     {return  {
         incer:()=>{dispatch(incerimentCounter())},
         decr:()=>{dispatch(decrimentCounter())},
         rese:()=>{dispatch(ResetCounter())}
-    }
+     }
     }         
-export default connect(
-    mapStateToProps,
-    mapDispatchToProps
-)
-(Counters)
+}
+export default connect(mapStateToProps,mapDispatchToProps)(Counters)
