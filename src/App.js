@@ -5,7 +5,7 @@ import Counter from "./counter";
 function App(){
 
   return(
-    <div>
+    <div className="box">
       <Provider store={store}>
         <Counter></Counter>
       </Provider>
