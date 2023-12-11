@@ -16,17 +16,12 @@ function Counytrydetails(){
                 countrysdetails && ( 
                     <div className="card">    
                     <img src={countrysdetails.flags.png} alt="" />
-
                     <div className="card-body bg-primary">
                  <h1 >{countrysdetails.name.common}</h1>
                  <p>{countrysdetails.capital}</p>
-                 <p></p>
-                  </div>
-                  </div>
-
             
-                
-  
+                  </div>
+                  </div>
                 )
             }
 

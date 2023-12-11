@@ -34,9 +34,6 @@ const router = createBrowserRouter([
               element:<Counytrydetails></Counytrydetails>
             }
           ]
-
-          
-
         }
       
     ]

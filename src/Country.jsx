@@ -10,9 +10,20 @@ function Api(){
         setCountrys([...res.data])
         })
     },[])
+
+        function abc(){
+            var sea=document.getElementById('se').value
+            var co=Countrys.filter((a)=>{
+                return(a.name.common.toLowerCase().startsWith(sea))
+            })
+            console.log(co)
+            setCountrys(co)  
+        }
+
     return(
         <div className="display"> 
     <div className="box">
+        <input type="text" onChange={abc} id="se" placeholder="search countrys" />
 
         {
             Countrys.length>0 && Countrys.map((a)=>{
@@ -24,8 +35,6 @@ function Api(){
     </div>
         <div>
         <Outlet></Outlet>
-
-            
             </div>        
         </div>
     )
