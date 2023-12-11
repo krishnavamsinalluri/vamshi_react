@@ -3,7 +3,7 @@ const initialState={
 }
 function counterReducer(state=initialState,action){
 
-    if(action.type='INC'){
-        
+    if(action.type==='INC'){
+        return{...state,}
     }
 }
