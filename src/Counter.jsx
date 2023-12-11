@@ -11,6 +11,7 @@ function Counters(props){
             <button onClick={()=>{props.rese()}}>Reset</button>
         </div>
     )
+}
 
     function mapStateToProps(state){return  state.c}
     function mapDispatchToProps(dispatch)
@@ -20,5 +21,5 @@ function Counters(props){
         rese:()=>{dispatch(ResetCounter())}
      }
     }         
-}
+
 export default connect(mapStateToProps,mapDispatchToProps)(Counters)
