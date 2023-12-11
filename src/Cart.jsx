@@ -1,17 +1,12 @@
 import React, { useState } from 'react';
 
 
-const Cart = (props)=>{
-    // console.log(props.price);
-    var [cart, setCart] = useState(props.price)
-
-    function dele(i){
-        //console.log(i)
-         var tem=cart.splice(i,1)
-            setCart([...tem])
-            console.log(tem)
-         }
-
+const Cart = ({props})=>{
+    
+    function dele(e){
+        var data = e.target.value;
+        dele(data);
+    }
     
     return(
         <div className='border'>
@@ -24,7 +19,7 @@ const Cart = (props)=>{
                             <img  src={b.image}  style={{width:"100px"}}className="card-img-top" alt="" />
                              <h5 >{b.category}</h5>
                                 <b> $ {b.price}</b>
-                                <button onClick={()=>dele(i)}>Remove from cart</button>
+                                <button value={b.id} onClick={dele}>Remove from cart</button>
 
                                 </div>
 

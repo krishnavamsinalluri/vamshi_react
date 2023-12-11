@@ -15,9 +15,13 @@ function Products(){
 },[]
 
 )
+    const deleteCart = (data)=>{
+        console.log(data);
+    }
+
     function add(a){
         setCards([...cards,a])
-       // console.log(a)
+       console.log(a)
     }
     // function dele(b){
     //     var tem=cards.splice(b,1)
@@ -37,16 +41,12 @@ function Products(){
                         <div className="card-body">
                           <h5 >{a.category}</h5>
                           <p> ${a.price}</p>
-                        
                           </div>
                            </div>
                            <div className="card text-bg-secondary">
                            <button className="btn" onClick={()=>{add(a)}}>add to card</button>
-                           
                              </div>
-                      </div>
-                        
-                        
+                      </div> 
                         )
                     })
                 
@@ -55,7 +55,6 @@ function Products(){
                 </div> 
                 <div className="col">
                     <Cart price={cards}></Cart>
-
                 </div>
             </div>
              
