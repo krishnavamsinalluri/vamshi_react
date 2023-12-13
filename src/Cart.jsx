@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 
 
-const Cart = ({props})=>{
+const Cart = (props)=>{
     
     function dele(e){
         var data = e.target.value;
@@ -20,7 +20,6 @@ const Cart = ({props})=>{
                              <h5 >{b.category}</h5>
                                 <b> $ {b.price}</b>
                                 <button value={b.id} onClick={dele}>Remove from cart</button>
-
                                 </div>
 
                             )

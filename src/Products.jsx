@@ -56,10 +56,7 @@ function Products(){
                 <div className="col">
                     <Cart price={cards}></Cart>
                 </div>
-            </div>
-             
-                       
-        
+            </div>   
     )
                    
     

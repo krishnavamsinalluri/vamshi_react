@@ -51,7 +51,7 @@ function Ipl(){
                     
                     return(
                         
-                        <li className="box"> playersname= {play.players}  teamnames={play.teamname}</li>
+                        <Li className="box"> playersname= {play.players}  teamnames={play.teamname}</Li>
                     )
                 })
             }
