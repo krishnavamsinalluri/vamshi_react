@@ -7,19 +7,9 @@ function Canner() {
         ]
     )
 
-
-
     return (
         <div>
-            <div>
-                {
-                    course.map((a) => {
-                        return <li>{a}</li>
-
-                    })
-                }
-            </div>
-            <div>
+           <div>
                 <div id="carouselExampleCaptions" class="carousel slide">
                     <div class="carousel-indicators">
                         <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
@@ -28,24 +18,21 @@ function Canner() {
                     </div>
                     <div class="carousel-inner">
                         <div class="carousel-item active">
-                            <img src="https://diligentias.com/wp-content/uploads/2019/05/Map-of-Andhra-pradesh.png" class="d-block w-100" alt="1st" />
+                            <img  className="  w-300px h-50px " src="https://www.mapsofindia.com/images2/india-map.jpg" class="d-block w-100" alt="1st" />
                                 <div class="carousel-caption d-none d-md-block">
-                                    <h5>First slide label</h5>
-                                    <p>Some representative placeholder content for the first slide.</p>
+                                    <h5 class=".text-danger">India</h5>
                                 </div>
                         </div>
                         <div class="carousel-item">
-                            <img src="https://upload.wikimedia.org/wikipedia/commons/c/c1/AndhraPradesh_state_map.jpg" class="d-block w-100" alt="2nd" />
+                            <img className="w-300px h-50px " src="https://www.mapsofindia.com/maps/andhrapradesh/andhrapradesh-district-map.jpg" class="d-block w-100" alt="2nd" />
                                 <div class="carousel-caption d-none d-md-block">
-                                    <h5>Second slide label</h5>
-                                    <p>Some representative placeholder content for the second slide.</p>
+                                    <h5>Andhra pradesh</h5>
                                 </div>
                         </div>
                         <div class="carousel-item">
-                            <img src="https://apedb.gov.in/assets/images/about-ap/aboutapmapsvg.svg" class="d-block w-100" alt="3rd" />
+                            <img className="  w-300px h-50px" src="https://www.onefivenine.com/images/StateMaps/Telangana.jpg" class="d-block w-100" alt="3rd" />
                                 <div class="carousel-caption d-none d-md-block">
-                                    <h5>Third slide label</h5>
-                                    <p>Some representative placeholder content for the third slide.</p>
+                                    <h5>Telangana</h5>
                                 </div>
                         </div>
                     </div>
