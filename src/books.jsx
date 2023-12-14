@@ -34,7 +34,7 @@ function Data(){
                     <div className="content">
                     <h1>{a.title}</h1>
                         <b>{a.auther}</b>
-                        <button onClick={del}>delete</button>
+                        <button onClick={()=>{del(books.id)}}>delete</button>
                     </div>
                         </div>)
                 })
