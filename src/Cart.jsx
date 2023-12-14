@@ -21,7 +21,6 @@ const Cart = (props)=>{
                                 <b> $ {b.price}</b>
                                 <button value={b.id} onClick={dele}>Remove from cart</button>
                                 </div>
-
                             )
                         })
                     
