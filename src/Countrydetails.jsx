@@ -18,7 +18,9 @@ function Counytrydetails(){
                     <img src={countrysdetails.flags.png} alt="" />
                     <div className="card-body bg-primary">
                  <h1 >{countrysdetails.name.common}</h1>
-                 <p>{countrysdetails.capital}</p>
+                 <p><b>Capital:</b>{countrysdetails.capital}</p>
+                 <p><b>Population:</b>{countrysdetails.population}</p>
+                 <p><b>languages:</b>{countrysdetails.languages.eng}</p>
             
                   </div>
                   </div>
