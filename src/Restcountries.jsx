@@ -42,7 +42,5 @@ function Planner(){
       </div>
 
     )
-
-    
 }
 export default Planner
