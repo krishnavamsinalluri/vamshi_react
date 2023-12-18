@@ -1,19 +1,15 @@
 import React, { useState } from 'react';
-
-
 const Cart = (props)=>{
-    
     function dele(e){
         var data = e.target.value;
         dele(data);
     }
-    
     return(
         <div className='border'>
             <h1>ADD TO CART</h1>
             {<div className="card">          
                           {
-                        props.price.map((b,i)=>{
+                        props.price.map((b)=>{
                             return(
                                 <div className='card '>
                             <img  src={b.image}  style={{width:"100px"}}className="card-img-top" alt="" />
@@ -23,7 +19,6 @@ const Cart = (props)=>{
                                 </div>
                             )
                         })
-                    
                     }
                     </div>  }
         </div>
