@@ -21,5 +21,4 @@ function Counters(props){
         rese:()=>{dispatch(ResetCounter())}
      }
     }         
-
 export default connect(mapStateToProps,mapDispatchToProps)(Counters)
