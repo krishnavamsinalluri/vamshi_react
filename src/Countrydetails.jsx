@@ -10,6 +10,7 @@ function Counytrydetails(){
             setCountrysdetails({...res.data[0]})
         })
     },[cname])
+
     return(
         <div>
             {
@@ -21,7 +22,6 @@ function Counytrydetails(){
                  <p><b>Capital:</b>{countrysdetails.capital}</p>
                  <p><b>Population:</b>{countrysdetails.population}</p>
                  <p><b>languages:</b>{countrysdetails.languages.eng}</p>
-            
                   </div>
                   </div>
                 )

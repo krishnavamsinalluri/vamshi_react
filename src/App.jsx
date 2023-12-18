@@ -8,7 +8,7 @@ function App() {
         Home
       </Link></button>
       &nbsp;&nbsp;&nbsp;&nbsp;
-      <button>      <Link to="/canner">States</Link>
+      <button>      <Link to="/state">States</Link>
         </button>
       &nbsp;&nbsp;&nbsp;&nbsp;
       <button>      <Link to="/Country">Countrys</Link>
