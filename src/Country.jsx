@@ -34,7 +34,9 @@ function Api(){
         }
     </div>
         <div>
-        <Outlet></Outlet>
+        <Outlet>
+            
+        </Outlet>
             </div>        
         </div>
     )

@@ -18,19 +18,19 @@ function Canner() {
                     </div>
                     <div class="carousel-inner">
                         <div class="carousel-item active">
-                            <img  className="  w-300px h-50px " src="https://www.mapsofindia.com/images2/india-map.jpg" class="d-block w-100" alt="1st" />
+                            <img  style={{width:"900px", height:"600px"}} src="https://www.mapsofindia.com/images2/india-map.jpg" class="d-block w-100" alt="1st" />
                                 <div class="carousel-caption d-none d-md-block">
                                     <h5 class=".text-danger">India</h5>
                                 </div>
                         </div>
                         <div class="carousel-item">
-                            <img className="w-300px h-50px " src="https://www.mapsofindia.com/maps/andhrapradesh/andhrapradesh-district-map.jpg" class="d-block w-100" alt="2nd" />
+                            <img style={{width:"900px",height:"600px"}} src="https://www.mapsofindia.com/maps/andhrapradesh/andhrapradesh-district-map.jpg" class="d-block w-100" alt="2nd" />
                                 <div class="carousel-caption d-none d-md-block">
                                     <h5>Andhra pradesh</h5>
                                 </div>
                         </div>
                         <div class="carousel-item">
-                            <img className="  w-300px h-50px" src="https://www.onefivenine.com/images/StateMaps/Telangana.jpg" class="d-block w-100" alt="3rd" />
+                            <img  style={{width:"900px",height:"600px"}} src="https://www.onefivenine.com/images/StateMaps/Telangana.jpg" class="d-block w-100" alt="3rd" />
                                 <div class="carousel-caption d-none d-md-block">
                                     <h5>Telangana</h5>
                                 </div>
