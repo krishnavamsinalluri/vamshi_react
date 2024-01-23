@@ -21,7 +21,7 @@ function Product(){
                         <div className="card m-3">
                        <h1 className="card-titte" >{a.category}</h1>
                         <img style={{width:"100px"}} src={a.image} alt="" />
-                        <button className="btn">add to cart</button>
+                        <button className="btn" onClick={a.id}>add to cart</button>
                         </div>
                     )
                 })
@@ -30,7 +30,7 @@ function Product(){
                 </div>
 
                 <div className="col">
-                    <Cart pr={cards}></Cart>
+                    <Cart price={cards}></Cart>
                 </div>
 
            </div>
