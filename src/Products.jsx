@@ -12,19 +12,20 @@ function Product(){
     },[])
     return (
             <div>
-            {
+                <div className="d-flex flex-warp">
+                {
                 datas.map((a)=>{
                     return (
                         <div className="box">
-                            <div className="content">
                        <h1>{a.category}</h1>
                         <img style={{width:"100px"}} src={a.image} alt="" />
-                        </div>
                         </div>
                     )
                 })
             }
-            </div>
+ 
+                </div>
+           </div>
     )
 }
 export default Product
