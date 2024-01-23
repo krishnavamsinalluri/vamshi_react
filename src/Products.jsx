@@ -15,7 +15,10 @@ function Product(){
             {
                 datas.map((a)=>{
                     return (
-                        <h1>{}</h1>
+                        <div className="box">
+                       <h1>{a.category}</h1>
+                        <img style={width="100px"} src={a.image} alt="" />
+                        </div>
                     )
                 })
             }
