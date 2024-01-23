@@ -11,8 +11,8 @@ function Product(){
         
     },[])
     return (
-            <div>
-                <div className="d-flex flex-warp">
+            <div className="row">
+                <div className="d-flex flex-wrap col">
                 {
                 datas.map((a)=>{
                     return (
