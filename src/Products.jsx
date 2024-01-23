@@ -1,4 +1,5 @@
 import axios, { Axios } from "axios";
+import Cart from "./Cart";
 import React, { useEffect } from "react";
 function Product(){
     var [datas,setDatas]=React.useState([])
@@ -17,14 +18,15 @@ function Product(){
                 datas.map((a)=>{
                     return (
                         <div className="card m-3">
-                       <h1>{a.category}</h1>
+                       <h1 className="card-titte" >{a.category}</h1>
                         <img style={{width:"100px"}} src={a.image} alt="" />
+                        <button className="btn">add to cart</button>
                         </div>
                     )
                 })
             }
                     <div className="col-4">
-                    <Cart> </Cart>
+                    <Cart pri={datas}></Cart>
                     </div>
                 </div>
 
