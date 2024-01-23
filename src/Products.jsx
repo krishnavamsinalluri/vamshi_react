@@ -12,7 +12,7 @@ function Product(){
     },[])
     return (
             <div className="row">
-                <div className="d-flex flex-wrap col">
+                <div className="d-flex flex-wrap col-8">
                 {
                 datas.map((a)=>{
                     return (
@@ -23,8 +23,8 @@ function Product(){
                     )
                 })
             }
-                    <div className="col">
-
+                    <div className="col-4">
+                    <Cart> </Cart>
                     </div>
                 </div>
 
