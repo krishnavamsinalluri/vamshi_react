@@ -1,17 +1,24 @@
 import axios, { Axios } from "axios";
 import React, { useEffect } from "react";
 function Product(){
-    var [data,setData]=React.useState()
+    var [datas,setDatas]=React.useState([])
     useEffect(()=>{
         axios.get("https://fakestoreapi.com/products").then((res)=>{
-            setData([...res.data])
-            console.log(res)
+            console.log(res.data)
+
+            setDatas([...res.data])
         })
         
     },[])
     return (
             <div>
-
+            {
+                datas.map((a)=>{
+                    return (
+                        <h1>{}</h1>
+                    )
+                })
+            }
             </div>
     )
 }
