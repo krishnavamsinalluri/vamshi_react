@@ -1,7 +1,14 @@
-import React from "react";
+import axios, { Axios } from "axios";
+import React, { useEffect } from "react";
 function Product(){
     var [data,setData]=React.useState()
-    axios.get("")
+    useEffect(()=>{
+        axios.get("https://fakestoreapi.com/products").then((res)=>{
+            setData([...res.data])
+            console.log(res)
+        })
+        
+    },[])
     return (
             <div>
 
