@@ -28,9 +28,11 @@ function Product(){
             }
 
                 </div>
-                <div className="col-4">
+
+                <div className="col">
                     <Cart pr={cards}></Cart>
                 </div>
+
            </div>
     )
 }
