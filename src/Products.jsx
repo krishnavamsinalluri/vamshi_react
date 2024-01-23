@@ -16,15 +16,18 @@ function Product(){
                 {
                 datas.map((a)=>{
                     return (
-                        <div className="box">
+                        <div className="card m-3">
                        <h1>{a.category}</h1>
                         <img style={{width:"100px"}} src={a.image} alt="" />
                         </div>
                     )
                 })
             }
- 
+                    <div className="col">
+
+                    </div>
                 </div>
+
            </div>
     )
 }
