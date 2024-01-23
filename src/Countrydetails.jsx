@@ -29,6 +29,5 @@ function Counytrydetails(){
 
         </div>
     )
-
 }
 export default Counytrydetails

@@ -79,8 +79,5 @@ function Canner() {
                     </div>
                             
     )
-
-
-
 }
 export default Canner;
