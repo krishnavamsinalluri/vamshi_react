@@ -7,20 +7,33 @@ import {
   createBrowserRouter,
   RouterProvider,
 } from "react-router-dom";
+import Countrydeatils from './Countrydetails';
+import Country from './Countrys';
 const router = createBrowserRouter([
   {
     path: "/",
-    element:<div></div>,
+    element:<App></App>,
+    children:[
+      {
+        path:"/countrys",
+        element:<Country></Country>,
+        children:[
+          {
+      
+      
+      path:'/countrys/countrysdeatils/:cname',
+      element:<Countrydeatils></Countrydeatils>
+       } 
+      ]
+    }
+    ]
   },
 ])
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
-  <React.StrictMode>
     <RouterProvider router={router} />
 
-    <App />
-  </React.StrictMode>
 );
 
 // If you want to start measuring performance in your app, pass a function
