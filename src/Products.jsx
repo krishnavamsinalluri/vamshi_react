@@ -12,6 +12,9 @@ function Product(){
         })
         
     },[])
+    function add(a){
+        setCards([...cards,a])
+    }
     return (
             <div className="row">
                 <div className="d-flex flex-wrap col-8">
@@ -21,7 +24,7 @@ function Product(){
                         <div className="card m-3">
                        <h1 className="card-titte" >{a.category}</h1>
                         <img style={{width:"100px"}} src={a.image} alt="" />
-                        <button className="btn" onClick={a.id}>add to cart</button>
+                        <button className="btn" onClick={()=>{add(a)}}>add to cart</button>
                         </div>
                     )
                 })

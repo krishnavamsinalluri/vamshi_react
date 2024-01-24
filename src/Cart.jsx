@@ -9,6 +9,7 @@ function Cart(props){
                         <div >
                             <h1>{b.category}</h1>
                             <img style={{width:"100px"}} src={b.image} alt="" />
+                            <button onClick={()=>{}}>remove</button>
                         </div>
                     )
                 })
