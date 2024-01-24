@@ -10,12 +10,12 @@ function Country(){
         })
     },[])
     return(
-        <div>
-            <div className="d-flex flex-wrap ">
+        <div className="row">
+            <div className="d-flex flex-wrap col">
             {
                 data.map((a)=>{
                     return(
-                    <div className="card p-2 m-3" style={{width:"50%"}}>
+                    <div className="card p-2 m-3">
                         <h3>{a.name.common}</h3>
                         <img  width={"180px"} src={a.flags[0]} alt="" />
                         <Link to={"/countrys/countrysdeatils/"+a.name.common}>Read more </Link>
@@ -25,8 +25,8 @@ function Country(){
             }
  
             </div>
-            <div style={{width:"50px"}}>
-                <h1>detais</h1>
+            <div className="col">
+                <h1>Country details</h1>
                 <Outlet></Outlet>
             </div>
       </div>

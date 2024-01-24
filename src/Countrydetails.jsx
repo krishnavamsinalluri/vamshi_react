@@ -18,9 +18,11 @@ function Countrydeatils(){
             {
                 details.length>0 && details.map((b)=>{
                     return (
-                        <div>
-                            <h1>{b.capital}</h1>
-                            <h1>{b.population}</h1>
+                        <div className="b-5">
+                            <h1>{b.name.common}</h1>
+                            <img width={"100px"} src={b.flags[0]} alt="" /><br/>
+                            <b> capital:{b.capital}</b><br />
+                            <b>population:{b.population}</b>
                         </div>
                     )
                 })
