@@ -1,10 +1,11 @@
 import React from "react"
 function App() { 
   return (
-    <div className="Box">
-    
-       </div>
-  );
+      <div className="box">
+        <h1>vamsai</h1>      
+      </div>
+
+ );
 }
 
 export default App;
