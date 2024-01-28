@@ -1,3 +1,4 @@
+@import url("../node_modules/bootstrap/dist/css/bootstrap.min.css");
 .box{
     border: 1px solid;
   padding: 10px;
