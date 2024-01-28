@@ -2,11 +2,10 @@ import React from "react"
 import { Link, Outlet } from "react-router-dom";
 function App() { 
   return (
-      <div className="box">
-        <h1>vamsai</h1>  
+      <div className="box ">
         <Link to="/countrys">Countries</Link>&nbsp;&nbsp;
         <Link to="/products">Productes</Link>
-        <div>
+        <div className="box">
           <Outlet></Outlet>
         </div>
       </div>

@@ -12,6 +12,7 @@ import {
 } from "react-router-dom";
 import Countires from './feauters/Country';
 import Products from './feauters/Product';
+import Details from './feauters/Countrydetails';
 const router = createBrowserRouter([
   {
     path: "/",
@@ -21,7 +22,8 @@ const router = createBrowserRouter([
         path:"/countrys",
         element:<Countires></Countires>,
         children:[{
-          path:"/countrys/countrysdetails/:cname"
+          path:"/countrys/countrysdetails/:cname",
+          element:<Details></Details>
         }]
         
       },
