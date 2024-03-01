@@ -1,10 +1,9 @@
 import React from "react";
-import { useSubmit } from "react-router-dom";
 function Inceriment(){
     var[incer,setIncer]=React.useState(0)
   var[decris,setDecris] = React.useState(0)
+
     function ab(){
-    
         setIncer(incer+1)
     }
 
