@@ -9,8 +9,8 @@ function Inceriment(){
 
     return (
         <div className="box">
-            <button onClick={ab}>Inceriment</button>
-            <h1>{incer}</h1>
+            <button onClick={ab}><h1>{incer}</h1>
+</button>
             <button onClick={()=>{setDecris(decris-1)}}>deceriment</button>
             <h1>{decris}</h1>
         </div>
